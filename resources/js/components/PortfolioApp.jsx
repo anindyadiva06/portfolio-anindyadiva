@@ -128,17 +128,18 @@ const PortfolioApp = () => {
                   <p className="text-base">talithadivaa</p>
                 </a>
 
+                {/* LinkedIn */}
+                <a href="https://www.linkedin.com/in/anindyadivatalitha" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:underline">
+                  <img src="/images/linkedin.png" alt="LinkedIn" className="w-6 h-6 hover:opacity-75 transition-opacity" />
+                  <p className="text-base">Anindya Diva Talitha</p>
+                </a>
+
                 {/* GitHub */}
                 <a href="https://github.com/anindyadiva06" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:underline">
                   <img src="/images/github.png" alt="GitHub" className="w-6 h-6 hover:opacity-75 transition-opacity" />
                   <p className="text-base">anindyadiva06</p>
                 </a>
 
-                {/* LinkedIn */}
-                <a href="https://www.linkedin.com/in/anindyadivatalitha" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:underline">
-                  <img src="/images/linkedin.png" alt="LinkedIn" className="w-6 h-6 hover:opacity-75 transition-opacity" />
-                  <p className="text-base">Anindya Diva Talitha</p>
-                </a>
               </div>
             </div>
           </div>

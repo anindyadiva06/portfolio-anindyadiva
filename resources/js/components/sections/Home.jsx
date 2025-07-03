@@ -42,24 +42,32 @@ const HomeSection = () => (
         <a
           href="mailto:anindyadiva99@gmail.com"
           className="bg-accent text-white p-2 rounded-full hover:bg-secondary transition"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <img src="/images/gmail.png" alt="LinkedIn" className="w-5 h-5" />
+          <img src="/images/gmail.png" alt="Gmail" className="w-5 h-5" />
         </a>
         <a
-          href="https://www.instagram.com/in/talithadivaa"
+          href="https://instagram.com/talithadivaa"
           className="bg-accent text-white p-2 rounded-full hover:bg-secondary transition"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <img src="/images/instagram.png" alt="LinkedIn" className="w-5 h-5" />
+          <img src="/images/instagram.png" alt="Instagram" className="w-5 h-5" />
         </a>
         <a
           href="https://www.linkedin.com/in/anindyadivatalitha"
           className="bg-accent text-white p-2 rounded-full hover:bg-secondary transition"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <img src="/images/linkedin.png" alt="LinkedIn" className="w-5 h-5" />
         </a>
         <a
           href="https://github.com/anindyadiva06"
           className="bg-accent text-white p-2 rounded-full hover:bg-secondary transition"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <img src="/images/github.png" alt="GitHub" className="w-5 h-5" />
         </a>

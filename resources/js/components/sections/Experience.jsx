@@ -87,6 +87,17 @@ const data = {
       role: 'Public Relation Division Coordinator | Nov 2024 - Nov 2024',
       icon: '/images/diesnat-icon.png',
     },
+     {
+      title: 'Pengabdian Masyarakat : Informatika Berbagi & Informatika Mengajar',
+      image: '/images/berbagi.jpg',
+      description: [
+        'Provided strategic guidance for the execution of community service programs, including 1 Informatika Berbagi event at a local orphanage in Purbalingga and 2 Informatika Mengajar sessions at elementary schools in Purwokerto and Purbalingga', 
+        'Identified challenges during program execution and took prompt, solution-oriented actions to maintain smooth operations and ensure successful outcomes', 
+        "Delivered thorough evaluations and actionable feedback to ensure continuous improvement, program sustainability, and alignment with organizational goals"
+      ],
+      role: 'Steering Committee | Jun 2024 - Sep 2024',
+      icon: '/images/hmif-icon.png',
+    },
     {
       title: 'Workshop : Exploring ReactJS',
       image: '/images/workshop.jpg',
@@ -96,17 +107,6 @@ const data = {
         'Increased participant engagement and confidence in building component-based web applications using ReactJS'
       ],
       role: 'Staff of Event Division | Aug 2024 - Sep 2024',
-      icon: '/images/hmif-icon.png',
-    },
-    {
-      title: 'Pengabdian Masyarakat : Informatika Berbagi & Informatika Mengajar',
-      image: '/images/berbagi.jpg',
-      description: [
-        'Provided strategic guidance for the execution of community service programs, including 1 Informatika Berbagi event at a local orphanage in Purbalingga and 2 Informatika Mengajar sessions at elementary schools in Purwokerto and Purbalingga', 
-        'Identified challenges during program execution and took prompt, solution-oriented actions to maintain smooth operations and ensure successful outcomes', 
-        "Delivered thorough evaluations and actionable feedback to ensure continuous improvement, program sustainability, and alignment with organizational goals"
-      ],
-      role: 'Steering Committee | Jun 2024 - Sep 2024',
       icon: '/images/hmif-icon.png',
     },
     {

@@ -12,17 +12,17 @@ const ContactSection = () => {
       url: 'https://instagram.com/talithadivaa',
       buttonText: 'Follow on Instagram',
     },
+        {
+      icon: '/images/linkedin.png',
+      name: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/anindyadivatalitha',
+      buttonText: 'Connect on LinkedIn',
+    },
     {
       icon: '/images/github.png',
       name: 'GitHub',
       url: 'https://github.com/anindyadiva06',
       buttonText: 'Visit GitHub',
-    },
-    {
-      icon: '/images/linkedin.png',
-      name: 'LinkedIn',
-      url: 'https://linkedin.com',
-      buttonText: 'Connect on LinkedIn',
     },
   ];
 

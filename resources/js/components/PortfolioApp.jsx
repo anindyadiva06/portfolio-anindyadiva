@@ -130,7 +130,7 @@ const PortfolioApp = () => {
 
                 {/* LinkedIn */}
                 <a href="https://www.linkedin.com/in/anindyadivatalitha" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:underline">
-                  <img src="/images/linkedin.png" alt="LinkedIn" className="w-10 h-10 bg-accent text-white p-2 rounded-full hover:bg-secondary transition" />
+                  <img src="/images/linkedin.png" alt="LinkedIn" className="w-10 h-10 bg-accent text-white p-0.25 rounded-full hover:bg-secondary transition" />
                   <p className="text-base">Anindya Diva Talitha</p>
                 </a>
 

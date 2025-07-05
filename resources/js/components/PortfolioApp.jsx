@@ -89,7 +89,7 @@ const PortfolioApp = () => {
       </main>
 
         {/* Footer */}
-        <footer className="bg-gradient-to-r from-secondary via-primary backdrop-blur-md shadow text-white py-9">
+        <footer className="bg-gradient-to-r from-secondary via-primary shadow text-white py-9">
           <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
             
             {/* Tentang */}

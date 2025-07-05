@@ -33,7 +33,7 @@ const PortoSection = ({ portoTab, setPortoTab }) => {
       role: 'Fullstack Developer | UI/UX Designer',
       category: ['Web Development'],
       techStack: ["Laravel", "HTML5", "Bootstrap", "CSS3", "JavaScript", "MySQL"],
-      description: 'Sign Wave is an interactive web platform designed to facilitate the learning of BISINDO sign language. By offering a comprehensive sign language dictionary and engaging quizzes, the platform helps users better understand and master sign language while presenting related information in a clear and engaging way.',
+      description: 'Sign Wave is an interactive web platform designed to facilitate the learning of BISINDO sign language. By offering a comprehensive sign language dictionary and engaging quizzes, the platform helps users better understand and master sign language while presenting related information in a clear and engaging way. This website has been officially registered as a copyrighted work and has received a Copyright Registration Certificate from the Directorate General of Intellectual Property (DJKI), affirming its originality and legal protection under intellectual property law (HAKI)',
       image: '/images/signwave.png',
       github: 'https://github.com/athifanathania/sign-wave',
     },

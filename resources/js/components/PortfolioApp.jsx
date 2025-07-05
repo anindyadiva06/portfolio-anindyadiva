@@ -62,7 +62,7 @@ const PortfolioApp = () => {
             Portfolio
           </h1>
            <p className="text-base lg:text-base font-normal text-deep max-w-2xl mx-auto">
-            To enhance and refine my skills in the field of IT, especially in web development, UI/UX design, and data analytics, I have built several projects and taken courses, which are showcased below.
+            To enhance and refine my skills in the field of IT, especially in web development, UI/UX design, and data science, I have built several projects and taken courses, which are showcased below.
           </p>
           <PortoSection portoTab={portoTab} setPortoTab={setPortoTab} />
         </section>

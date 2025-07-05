@@ -42,7 +42,7 @@ const PortfolioApp = () => {
             <li key={id}>
               <button
                 onClick={() => handleNavClick(id)}
-                className="hover:text-deep font-normal capitalize text-white transition-colors duration-300"
+                className="hover:text-white font-normal capitalize text-deep transition-colors duration-300"
               >
                 {id}
               </button>
@@ -89,7 +89,7 @@ const PortfolioApp = () => {
       </main>
 
         {/* Footer */}
-        <footer className="bg-gradient-to-r from-secondary via-primary shadow text-white py-9">
+        <footer className="bg-gradient-to-r from-secondary via-primary backdrop-blur-md shadow text-deep py-9">
           <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10 text-center md:text-left">
             
             {/* Tentang */}

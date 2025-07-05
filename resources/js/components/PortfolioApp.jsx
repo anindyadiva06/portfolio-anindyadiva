@@ -118,25 +118,25 @@ const PortfolioApp = () => {
                 
                 {/* Email */}
                 <a href="mailto:anindyadiva99@gmail.com" className="flex items-center gap-3 hover:underline">
-                  <img src="/images/gmail.png" alt="Email" className="w-6 h-6 bg-accent text-white p-2 rounded-full hover:bg-secondary transition" />
+                  <img src="/images/gmail.png" alt="Email" className="w-10 h-10 bg-accent text-white p-2 rounded-full hover:bg-secondary transition" />
                   <p className="text-base">anindyadiva99@gmail.com</p>
                 </a>
 
                 {/* Instagram */}
                 <a href="https://instagram.com/talithadivaa" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:underline">
-                  <img src="/images/instagram.png" alt="Instagram" className="w-6 h-6 bg-accent text-white p-2 rounded-full hover:bg-secondary transition" />
+                  <img src="/images/instagram.png" alt="Instagram" className="w-10 h-10 bg-accent text-white p-2 rounded-full hover:bg-secondary transition" />
                   <p className="text-base">talithadivaa</p>
                 </a>
 
                 {/* LinkedIn */}
                 <a href="https://www.linkedin.com/in/anindyadivatalitha" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:underline">
-                  <img src="/images/linkedin.png" alt="LinkedIn" className="w-6 h-6 bg-accent text-white p-2 rounded-full hover:bg-secondary transition" />
+                  <img src="/images/linkedin.png" alt="LinkedIn" className="w-10 h-10 bg-accent text-white p-2 rounded-full hover:bg-secondary transition" />
                   <p className="text-base">Anindya Diva Talitha</p>
                 </a>
 
                 {/* GitHub */}
                 <a href="https://github.com/anindyadiva06" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:underline">
-                  <img src="/images/github.png" alt="GitHub" className="w-6 h-6 bg-accent text-white p-2 rounded-full hover:bg-secondary transition" />
+                  <img src="/images/github.png" alt="GitHub" className="w-10 h-10 bg-accent text-white p-2 rounded-full hover:bg-secondary transition" />
                   <p className="text-base">anindyadiva06</p>
                 </a>
 

@@ -45,7 +45,7 @@ const data = {
         'Led an 8-member Education Division, successfully overseeing the planning and execution of 4 internal programs aligned with organizational goals', 
         'Recognized as Division of the Month for the April edition among 8 divisions for outstanding performance and initiative', 
         'Organized 24 Informatics Study Club sessions in 1 semester, consistently attended by 35+ students to support academic development',
-        'Conducted 3 academic briefings (MBKM internship, thesis, and final project), providing guidance and improving academic readiness for 45+ students'
+        'Conducted 3 academic briefings (MBKM internship, thesis, and final project), providing guidance and improving academic readiness for 50+ students'
       ],
       role: 'Head of Education Division | Mar 2024 - Jan 2025',
       icon: '/images/hmif-icon.png',
@@ -81,7 +81,7 @@ const data = {
       description: [
         'Coordinated a 10-member Public Relations team for the 16th Dies Natalis event, ensuring seamless and impactful external communication', 
         'Managed guest relations and engaged directly with 100+ invitees, delivering a professional and welcoming event experience', 
-        'Led the development and distribution of 15+ social media captions and 20+ broadcast messages, significantly boosting event visibility and audience engagement', 
+        'Led the development and distribution of 15+ social media captions and 30+ broadcast messages, significantly boosting event visibility and audience engagement', 
         'Maintained active communication with key stakeholders to align messaging, strengthen partnerships, and ensure event success'
       ],
       role: 'Public Relation Division Coordinator | Nov 2024 - Nov 2024',

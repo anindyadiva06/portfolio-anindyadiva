@@ -54,7 +54,7 @@ const PortoSection = ({ portoTab, setPortoTab }) => {
       role: 'Fullstack Developer | UI/UX Designer',
       category: ['Web Development', 'UI/UX'],
       techStack: ["Laravel", "React", "Tailwind CSS", "JavaScript", "Vite"],
-      description: "This portfolio website showcases my background along with a collection of projects I have worked on, ranging from web development and UI/UX design to data and machine learning. It is designed to provide a comprehensive overview of my skills, experience, and dedication to creating functional digital solutions.",
+      description: "This portfolio website showcases my background along with a collection of projects I have worked on, ranging from web development and UI/UX design to data science and machine learning. It is designed to provide a comprehensive overview of my skills, experience, and dedication to creating functional digital solutions.",
       image: '/images/portodiva.png',
       github: 'https://github.com/anindyadiva06/portfolio-anindyadiva.git',
     },
@@ -100,9 +100,9 @@ const PortoSection = ({ portoTab, setPortoTab }) => {
     {
       title: 'Accuracy Comparison of Naive Bayes with SMOTE and SVM with Hyperparameter Tuning for Indonesian Presidential Election Sentiment Analysis',
       type: 'Research | Group Project',
-      role: 'Data Mining Researcher',
-      techStack: ["Data Mining", "Naive Bayes", "SVM", "RapidMiner"],
-      category: ['Data | Machine Learning'],
+      role: 'Data Science Researcher',
+      techStack: ["Data Science", "Naive Bayes", "SVM", "RapidMiner"],
+      category: ['Data Science | Machine Learning'],
       description: "This study compares the performance of the Naive Bayes algorithm with SMOTE and the Support Vector Machine (SVM) with hyperparameter tuning in classifying public sentiment on Twitter regarding the 2024 Indonesian presidential election. After preprocessing the dataset, SMOTE was applied to address class imbalance for Naive Bayes, while Grid Search was used for tuning SVM. The results show that Naive Bayes with SMOTE achieved the highest accuracy at 91.69%, outperforming SVM with a linear kernel (90.26%) and an RBF kernel (85.77%). These findings highlight the effectiveness of SMOTE in improving classification accuracy, making Naive Bayes a more suitable choice for sentiment analysis in this context.",
       image: '/images/datmin.png',
     },
@@ -111,7 +111,7 @@ const PortoSection = ({ portoTab, setPortoTab }) => {
       type: 'Group Project | Final Project for the Machine Learning Course',
       role: 'Machine Learning Student',
       techStack: ["Clustering", "PCA", "Behavior Analysis", "Association Rules", "Python"],
-      category: ['Data | Machine Learning'],
+      category: ['Data Science | Machine Learning'],
       description: "This project analyzes Spotify user behavior through data preprocessing, Principal Component Analysis (PCA), K-Means clustering (k=6), and association rule mining. It identifies six distinct user segments based on daily listening time, session duration, access frequency, and song count. Each cluster exhibits unique behavioral patterns and genre preferences, ranging from acoustic enthusiasts to energetic or experimental listeners. The association rules reveal meaningful co-listening patterns, such as Classical with R\&B, enabling the development of personalized and context-aware music recommendations. These insights support enhanced user engagement, retention strategies, and targeted feature development.",
       image: '/images/spotify.png',
     },
@@ -120,7 +120,7 @@ const PortoSection = ({ portoTab, setPortoTab }) => {
       type: 'Machine Learning Coursework Project',
       role: 'Machine Learning Student',
       techStack: ["Linear Regression", "Python", "Model Evaluation"],
-      category: ['Data | Machine Learning'],
+      category: ['Data Science | Machine Learning'],
       description: "This regression task analyzed the relationship between engine size and CO₂ emissions using linear regression. Normalization had minimal effect, while outlier removal improved accuracy by reducing the RMSE from 31.40 to 27.78 and the MAE from 24.10 to 22.18. Adding FUELCONSUMPTION_COMB and CYLINDERS further enhanced the results, lowering the MAE to 13.91 and the RMSE to 17.88. City fuel consumption showed the strongest correlation with CO₂ emissions (0.90). The final model achieved an MAE of 16.69, an RMSE of 22.61, a MAPE of 6.98%, and an R² of 0.8763.",
       image: '/images/co2.png',
     },
@@ -129,7 +129,7 @@ const PortoSection = ({ portoTab, setPortoTab }) => {
       type: 'Machine Learning Coursework Project',
       role: 'Machine Learning Student',
       techStack: ["Machine Learning", "Python", "Linear Regression", "KNN", "Random Forest"],
-      category: ['Data | Machine Learning'],
+      category: ['Data Science | Machine Learning'],
       description: "This project predicts gold prices using historical data (2015–2025) through classification and regression approaches. A Voting Classifier (KNN + Random Forest) was used to determine price direction, while Linear Regression was applied to estimate price values. Splitting the data by year (2015–2023 for training, 2024–2025 for testing) resulted in better accuracy. The classification model achieved an accuracy of 99.08%, and the regression model reached an R² of 0.9926 with an MAE of 19.91. Predicted prices for April 22–24, 2025, showed a slight decline but were still classified as an upward trend, indicating strong model performance.",
       image: '/images/emas.png',
     },
@@ -140,9 +140,7 @@ const PortoSection = ({ portoTab, setPortoTab }) => {
 
   {/* Certificates */}
   const certificates = [
-  { title: 'Dicoding Laravel', company: 'Dicoding Indonesia', category: 'Courses', image: '/images/certificates/dicoding-laravel.jpg' },
-  { title: 'Dicoding Laravel', company: 'Dicoding Indonesia', category: 'Courses', image: '/images/certificates/dicoding-laravel.jpg' },
-  { title: 'Dicoding Laravel', company: 'Dicoding Indonesia', category: 'Courses', image: '/images/certificates/dicoding-laravel.jpg' },
+  { title: 'Data Science', company: 'Dicoding Indonesia', category: 'Courses', image: '/images/certificates/dicoding-data.jpg' },
 
   { title: 'IT Support Intern', company: 'PT. Mandom Indonesia Tbk.', category: 'Works', image: '/images/certificates/kp.jpg' },
   { title: 'Laboratory Assistant of Database', company: 'Informatics Laboratory Assistant', category: 'Works', image: '/images/certificates/basdat.jpg' },
@@ -151,7 +149,7 @@ const PortoSection = ({ portoTab, setPortoTab }) => {
   { title: 'Staff of The Month October Edition', company: 'Himpunan Mahasiswa Informatika (HMIF) UNSOED | Informatics Student Association of Jenderal Soedirman University', category: 'Organizations', image: '/images/certificates/sotm.jpg' },
   { title: 'Staff of Education Division', company: 'Himpunan Mahasiswa Informatika (HMIF) UNSOED | Informatics Student Association of Jenderal Soedirman University', category: 'Organizations', image: '/images/certificates/staffedu.jpg' },
 
-  { title: 'Group Companion Division Coordinator', company: 'Maskrab Makrab Informatika 2025 | Informatics Student Orientation & Bonding Camp 2025', category: 'Committees', image: '/images/certificates/koorpk.png' },
+  { title: 'Group Companion Division Coordinator', company: 'Maskrab Makrab Informatika 2025 | Informatics Student Orientation & Bonding Camp 2025', category: 'Committees', image: '/images/certificates/koorpk.jpg' },
   { title: 'Public Relations Division Coordinator', company: 'Dies Natalis 16 Informatika | 16th Informatics Anniversary Event', category: 'Committees', image: '/images/certificates/diesnat.jpg' },
   { title: 'Steering Committee', company: 'Pengabdian Masyarakat : Informatika Berbagi & Informatika Mengajar 2024 | Community Service : Informatics Sharing & Teaching 2024', category: 'Committees', image: '/images/certificates/sc.jpg' },
   { title: 'Event Division Coordinator', company: 'Pemilihan Raya HMIF UNSOED 2024 | HMIF UNSOED General Election 2024', category: 'Committees', image: '/images/certificates/pemira.jpg' },
@@ -232,7 +230,7 @@ const PortoSection = ({ portoTab, setPortoTab }) => {
       {/* Projects */}
       {portoTab === 'Projects' && (
         <div className="flex justify-center gap-4 flex-wrap mb-4">
-          {['All', 'Web Development', 'UI/UX', 'Mobile App Development', 'Data | Machine Learning'].map((cat) => (
+          {['All', 'Web Development', 'UI/UX', 'Mobile App Development', 'Data Science | Machine Learning'].map((cat) => (
             <button
               key={cat}
               onClick={() => setActiveCategory(cat)}

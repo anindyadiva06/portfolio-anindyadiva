@@ -34,7 +34,7 @@ const HomeSection = () => (
       </div>
 
       <p className="text-base text-accent-700">
-        I’m an Informatics student passionate about web development, UI/UX and data. During my studies, I’ve built and designed visually engaging websites and contributed to research in the field of data. Let’s connect and explore innovative solutions together!
+        I’m an Informatics student passionate about web development, UI/UX and data science. During my studies, I’ve built and designed visually engaging websites and contributed to research in the field of data. Let’s connect and explore innovative solutions together!
       </p>
 
       {/* Socials */}
@@ -76,7 +76,7 @@ const HomeSection = () => (
       {/* Button CV */}
       <div className="mt-4">
         <a
-          href="/files/cv.pdf"
+          href="/files/CV - Anindya Diva Talitha.pdf"
           download
           className="bg-accent text-white px-4 py-2 rounded hover:bg-secondary transition inline-flex items-center gap-2"
         >

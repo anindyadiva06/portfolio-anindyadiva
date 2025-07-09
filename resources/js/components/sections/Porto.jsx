@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Modal from '../Modal';
 
 const PortoSection = ({ portoTab, setPortoTab }) => {
   const [showAllProjects, setShowAllProjects] = useState(false);
@@ -9,9 +10,26 @@ const PortoSection = ({ portoTab, setPortoTab }) => {
   const [certificateCategory, setCertificateCategory] = useState('All');
   const [techCategory, setTechCategory] = useState('Tech Stacks');
 
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = (image) => {
+    setSelectedImage(image);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+      setIsModalOpen(false);
+      setSelectedImage(null);
+    };
+
+ useEffect(() => {
+  document.body.style.overflowY = isModalOpen ? 'hidden' : 'auto';
+}, [isModalOpen]);
+
   const fadeIn = {
     hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+    show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
   {/* Projects */}
@@ -21,7 +39,7 @@ const PortoSection = ({ portoTab, setPortoTab }) => {
       type: 'Website | Group Project',
       role: 'Fullstack Developer | UI/UX Designer',
       category: ['Web Development', 'UI/UX'],
-      techStack: ["Laravel", "HTML5", "CSS3", "JavaScript", "SQLite", "Expert System - Backward Chaining Method"],
+      techStack: ["Laravel", "HTML5", "CSS3", "JavaScript", "SQLite", "Expert System", "Backward Chaining Method"],
       description:
         'SosmedCare is an expert system-based website that evaluates social media addiction through symptom-based questions, offering tailored features for Admins to manage data, Experts to verify and refine diagnostic rules, and Users to gain insights into their addiction, take diagnostic tests, and receive initial solutions as a first step toward managing their addiction.',
       image: '/images/sosmedcare.png',
@@ -33,7 +51,7 @@ const PortoSection = ({ portoTab, setPortoTab }) => {
       role: 'Fullstack Developer | UI/UX Designer',
       category: ['Web Development'],
       techStack: ["Laravel", "HTML5", "Bootstrap", "CSS3", "JavaScript", "MySQL"],
-      description: 'Sign Wave is an interactive web platform designed to facilitate the learning of BISINDO sign language. By offering a comprehensive sign language dictionary and engaging quizzes, the platform helps users better understand and master sign language while presenting related information in a clear and engaging way. This website has been officially registered as a copyrighted work and has received a Copyright Registration Certificate from the Directorate General of Intellectual Property (DJKI), affirming its originality and legal protection under intellectual property law (HAKI)',
+      description: 'Sign Wave is an educational web platform that supports the learning of BISINDO sign language through a dictionary and quizzes. The website is officially registered and has received a Copyright Registration Certificate from the Directorate General of Intellectual Property (DJKI), confirming its originality and legal protection under intellectual property law (HAKI).',
       image: '/images/signwave.png',
       github: 'https://github.com/athifanathania/sign-wave',
     },
@@ -103,25 +121,25 @@ const PortoSection = ({ portoTab, setPortoTab }) => {
       role: 'Data Science Researcher',
       techStack: ["Data Science", "Naive Bayes", "SVM", "RapidMiner"],
       category: ['Data Science | Machine Learning'],
-      description: "This study compares the performance of the Naive Bayes algorithm with SMOTE and the Support Vector Machine (SVM) with hyperparameter tuning in classifying public sentiment on Twitter regarding the 2024 Indonesian presidential election. After preprocessing the dataset, SMOTE was applied to address class imbalance for Naive Bayes, while Grid Search was used for tuning SVM. The results show that Naive Bayes with SMOTE achieved the highest accuracy at 91.69%, outperforming SVM with a linear kernel (90.26%) and an RBF kernel (85.77%). These findings highlight the effectiveness of SMOTE in improving classification accuracy, making Naive Bayes a more suitable choice for sentiment analysis in this context.",
+      description: "This study compares Naive Bayes with SMOTE and SVM with hyperparameter tuning for classifying Twitter sentiment regarding the 2024 Indonesian presidential election. Naive Bayes with SMOTE achieved the highest accuracy (91.69%), outperforming both SVM with a linear kernel (90.26%) and an RBF kernel (85.77%).",
       image: '/images/datmin.png',
     },
     {
       title: 'Spotify User Segmentation Using PCA, Clustering, and Association Rules',
       type: 'Group Project | Final Project for the Machine Learning Course',
       role: 'Machine Learning Student',
-      techStack: ["Clustering", "PCA", "Behavior Analysis", "Association Rules", "Python"],
+      techStack: ["Python", "Clustering", "PCA", "Behavior Analysis", "Association Rules"],
       category: ['Data Science | Machine Learning'],
-      description: "This project analyzes Spotify user behavior through data preprocessing, Principal Component Analysis (PCA), K-Means clustering (k=6), and association rule mining. It identifies six distinct user segments based on daily listening time, session duration, access frequency, and song count. Each cluster exhibits unique behavioral patterns and genre preferences, ranging from acoustic enthusiasts to energetic or experimental listeners. The association rules reveal meaningful co-listening patterns, such as Classical with R\&B, enabling the development of personalized and context-aware music recommendations. These insights support enhanced user engagement, retention strategies, and targeted feature development.",
+      description: "This project analyzes Spotify user behavior using PCA, K-Means clustering (k=6), and association rule mining. It identifies six user segments with distinct listening habits and genre preferences. Key association rules, such as Classical with R&B, reveal co-listening patterns that can enhance personalized recommendations and improve user engagement.",
       image: '/images/spotify.png',
     },
     {
       title: 'CO₂ Emissions Prediction Using Linear and Multiple Regression with Feature Optimization',
       type: 'Machine Learning Coursework Project',
       role: 'Machine Learning Student',
-      techStack: ["Linear Regression", "Python", "Model Evaluation"],
+      techStack: ["Python", "Linear Regression", "Model Evaluation"],
       category: ['Data Science | Machine Learning'],
-      description: "This regression task analyzed the relationship between engine size and CO₂ emissions using linear regression. Normalization had minimal effect, while outlier removal improved accuracy by reducing the RMSE from 31.40 to 27.78 and the MAE from 24.10 to 22.18. Adding FUELCONSUMPTION_COMB and CYLINDERS further enhanced the results, lowering the MAE to 13.91 and the RMSE to 17.88. City fuel consumption showed the strongest correlation with CO₂ emissions (0.90). The final model achieved an MAE of 16.69, an RMSE of 22.61, a MAPE of 6.98%, and an R² of 0.8763.",
+      description: "This study used linear regression to analyze how engine size affects CO₂ emissions. Removing outliers and adding features like fuel consumption and cylinder count significantly improved accuracy. City fuel consumption showed the strongest correlation (0.90). The final model achieved an MAE of 16.69, RMSE of 22.61, MAPE of 6.98%, and R² of 0.8763.",
       image: '/images/co2.png',
     },
     {
@@ -130,7 +148,7 @@ const PortoSection = ({ portoTab, setPortoTab }) => {
       role: 'Machine Learning Student',
       techStack: ["Machine Learning", "Python", "Linear Regression", "KNN", "Random Forest"],
       category: ['Data Science | Machine Learning'],
-      description: "This project predicts gold prices using historical data (2015–2025) through classification and regression approaches. A Voting Classifier (KNN + Random Forest) was used to determine price direction, while Linear Regression was applied to estimate price values. Splitting the data by year (2015–2023 for training, 2024–2025 for testing) resulted in better accuracy. The classification model achieved an accuracy of 99.08%, and the regression model reached an R² of 0.9926 with an MAE of 19.91. Predicted prices for April 22–24, 2025, showed a slight decline but were still classified as an upward trend, indicating strong model performance.",
+      description: "This project predicts gold prices (2015–2025) using a Voting Classifier (KNN + Random Forest) for direction (99.08% accuracy) and Linear Regression for value estimation (R²: 0.8763, MAE: 16.69). The price predictions for April 22–24, 2025, showed a slight dip but remained in an upward trend, reflecting strong model performance.",
       image: '/images/emas.png',
     },
   ];
@@ -140,7 +158,9 @@ const PortoSection = ({ portoTab, setPortoTab }) => {
 
   {/* Certificates */}
   const certificates = [
+  { title: 'React', company: 'Dicoding Indonesia', category: 'Courses', image: '/images/certificates/dicoding-react.jpg' },
   { title: 'Data Science', company: 'Dicoding Indonesia', category: 'Courses', image: '/images/certificates/dicoding-data.jpg' },
+  { title: 'SQL', company: 'HackerRank', category: 'Courses', image: '/images/certificates/hackerrank-sql.jpg' },
 
   { title: 'IT Support Intern', company: 'PT. Mandom Indonesia Tbk.', category: 'Works', image: '/images/certificates/kp.jpg' },
   { title: 'Laboratory Assistant of Database', company: 'Informatics Laboratory Assistant', category: 'Works', image: '/images/certificates/basdat.jpg' },
@@ -214,7 +234,8 @@ const PortoSection = ({ portoTab, setPortoTab }) => {
   const visibleTechs = showAllTechs ? filteredTechs : filteredTechs.slice(0, 5);
 
   return (
-    <section>
+    <>
+    <section className="relative">
       <div className="flex justify-center gap-4 flex-wrap mb-6">
         {['Projects', 'Certificates', 'Tech Stacks and Tools'].map((tab) => (
           <button
@@ -319,6 +340,11 @@ const PortoSection = ({ portoTab, setPortoTab }) => {
 
         {portoTab === 'Certificates' && (
           <>
+            <div className="flex justify-end mb-4">
+              <p className="text-sm text-deep italic bg-primary px-4 py-2 rounded-md shadow">
+                📌 Click on any certificate image to zoom in.
+              </p>
+            </div>
             <motion.div
               key={certificateCategory}
               variants={fadeIn}
@@ -341,7 +367,8 @@ const PortoSection = ({ portoTab, setPortoTab }) => {
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="w-full h-56 object-contain mb-3"
+                      onClick={() => openModal(item.image)}
+                      className="w-full h-56 object-contain mb-3 cursor-pointer hover:scale-105 transition"
                     />
                     <p className="font-semibold text-center text-deep">{item.title}</p>
                     {item.company && (
@@ -385,6 +412,8 @@ const PortoSection = ({ portoTab, setPortoTab }) => {
         )}
       </AnimatePresence>
     </section>
+    <Modal isOpen={isModalOpen} image={selectedImage} onClose={closeModal}/>
+    </>
   );
 };
 
